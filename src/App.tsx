@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import './App.css';
+import './css/App.css';
 
 const App: FC = () => {
     return (
