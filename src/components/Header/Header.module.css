@@ -1,0 +1,44 @@
+.Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #393D46;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    height: 80px;
+    font-size: 16px;
+    text-align: end;
+    font-weight: 700;
+    z-index: 999;
+    font-size: 16px;
+}
+
+
+.Header a {
+    color: #fff;
+    transition: all .3s linear;
+    margin-left: 50px;
+    text-decoration: underline;
+}
+
+.Header a:hover {
+    color: #ecbcb2;
+    opacity: .5;
+}
+
+@media screen and (max-width: 992px) {
+    .Header {
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 567px) {
+    .Header {
+        height: 50px;
+        font-size: 12px;
+    }
+}

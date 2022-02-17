@@ -1,0 +1,12 @@
+.Container {
+    width: 100%;
+    padding: 0 30px;
+    max-width: 1380px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .Container {
+        padding: 0 15px;
+    }
+}

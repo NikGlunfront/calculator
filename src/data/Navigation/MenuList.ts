@@ -21,3 +21,15 @@ export const turMenuList = [
     {text: "Samimiyet", navigateTo: RouteNames.PROXIMITY, key: "Proximity", icon: faRing},
     {text: "Yeteneği", navigateTo: RouteNames.TALENTS, key: "Talents", icon: faStar},
 ]
+
+export const rusHeader = [
+    {text: "Оставить отзыв (анонимно)", id: 'review'}
+]
+
+export const engHeader = [
+    {text: "Leave a review (anonymous)", id: 'review'}
+]
+
+export const turHeader = [
+    {text: "Bir inceleme bırakın (anonim)", id: 'review'}
+]
