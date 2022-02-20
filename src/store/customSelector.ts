@@ -1,4 +1,3 @@
-
 import { RootState } from "./store"
 
 const languageState = (state: RootState) => state.languageReducer;

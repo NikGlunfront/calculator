@@ -1,12 +1,13 @@
-import React, { FC } from 'react';
+import React, { FC, MouseEventHandler } from 'react';
 
 interface HeaderLinkProps {
     children: React.ReactChild
+    onClick: MouseEventHandler
 }
 
-const HeaderLink:FC<HeaderLinkProps> = ({children}:HeaderLinkProps) => {
+const HeaderLink:FC<HeaderLinkProps> = ({children, onClick}:HeaderLinkProps) => {
     return (
-        <a href='#'>
+        <a href='#' onClick={onClick}>
             {children}
         </a>
     );

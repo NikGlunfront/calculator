@@ -11,16 +11,16 @@ const App: FC = () => {
     
     const {language} = useAppSelector(allStates.languageState)
     const {changeLanguage} = useLanguageActions()
+
+    const navData = DATA_LANGUAGES[language]
+
+    console.log(navData)
     
-    const buttonClick = () => {
-        changeLanguage('eng')
-    }
+    
 
     return (
         <div className='page-wrapper'>
-            <Header links={[{text: "Оставить отзыв (анонимно)", id: 'review'}]} />
-            <div>{language}</div>
-            <button onClick={buttonClick}>CLICK</button>
+            <Header links={navData.header} />
             {/* <Sidebar /> */}
 
             {/* <ModalWindow /> */}

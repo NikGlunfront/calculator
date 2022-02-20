@@ -1,5 +1,7 @@
 import { faHeart, faHome, faRing, faStar } from "@fortawesome/free-solid-svg-icons";
+import React from "react";
 import { RouteNames } from "../../router";
+import { exitHandler, reviewHandler } from "./HeaderFunctions";
 
 export const rusMenuList = [
     {text: "Главная", navigateTo: RouteNames.HOME, key: "Home", icon: faHome},
@@ -22,17 +24,19 @@ export const turMenuList = [
     {text: "Yeteneği", navigateTo: RouteNames.TALENTS, key: "Talents", icon: faStar},
 ]
 
+
 export const rusHeader = [
-    {text: "Оставить отзыв (анонимно)", id: 'review'},
-    {text: "Выйти", id: 'exit'}
+    {text: "Оставить отзыв (анонимно)", id: 'review', onClick: reviewHandler},
+    {text: "Выйти", id: 'exit', onClick: exitHandler}
 ]
 
 export const engHeader = [
-    {text: "Leave a review (anonymous)", id: 'review'},
-    {text: "Exit", id: 'exit'}
+    {text: "Leave a review (anonymous)", id: 'review',  onClick: reviewHandler},
+    {text: "Exit", id: 'exit', onClick: exitHandler}
 ]
 
 export const turHeader = [
-    {text: "Bir inceleme bırakın (anonim)", id: 'review'},
-    {text: "çıkış", id: 'exit'}
+    {text: "Bir inceleme bırakın (anonim)", id: 'review',  onClick: reviewHandler},
+    {text: "çıkış", id: 'exit', onClick: exitHandler}
 ]
+
