@@ -8,7 +8,7 @@ interface HeaderProps {
     links: [IHeaderLink]
 }
 
-const Header: FC<HeaderProps> = ({links}: HeaderProps) => {
+const Header: FC<HeaderProps> = ({links}) => {
 
     // const {changeModalVisibility} = useActions()
 

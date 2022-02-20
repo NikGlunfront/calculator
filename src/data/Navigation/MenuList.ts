@@ -23,13 +23,16 @@ export const turMenuList = [
 ]
 
 export const rusHeader = [
-    {text: "Оставить отзыв (анонимно)", id: 'review'}
+    {text: "Оставить отзыв (анонимно)", id: 'review'},
+    {text: "Выйти", id: 'exit'}
 ]
 
 export const engHeader = [
-    {text: "Leave a review (anonymous)", id: 'review'}
+    {text: "Leave a review (anonymous)", id: 'review'},
+    {text: "Exit", id: 'exit'}
 ]
 
 export const turHeader = [
-    {text: "Bir inceleme bırakın (anonim)", id: 'review'}
+    {text: "Bir inceleme bırakın (anonim)", id: 'review'},
+    {text: "çıkış", id: 'exit'}
 ]
