@@ -1,5 +1,6 @@
 @import './utils/reset.css';
 @import './utils/fonts.css';
+@import './utils/vars.css';
 @import './utils/scroll.css';
 @import 'antd/dist/antd.css';
 

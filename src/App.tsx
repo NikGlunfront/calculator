@@ -7,6 +7,7 @@ import { allStates} from './store/customSelector';
 import { useAppSelector } from './hooks/redux/redux';
 import Sidebar from './components/Sidebar/Sidebar';
 import { DATA_SIDEBAR } from './data/Sidebar';
+import Footer from './components/Footer/Footer';
 
 const App: FC = () => {
     const {language} = useAppSelector(allStates.languageState)
@@ -30,7 +31,7 @@ const App: FC = () => {
                 <AppRouter/>
             </main>
 
-            {/* <Footer /> */}
+            <Footer />
         </div>
     );
 };

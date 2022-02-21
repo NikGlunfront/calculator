@@ -7,8 +7,8 @@
     flex-direction: column;
     min-width: 180px;
     padding: 50px 20px;
-    background-color: #F6F7FB;
-    box-shadow: 5px 0px 30px 0 rgba(34, 60, 80, 0.6) inset;
+    background-color: var(--primary-grey-color);
+    box-shadow: var(--sidebar-content-wrapper-boxshadow);
     z-index: 999;
 }
 
@@ -29,7 +29,7 @@
     height: 90px;
     flex: 0 0 90px;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: var(--primary-white-color);
     margin: 20px 0;
     cursor: pointer;
     z-index: 2;
@@ -48,7 +48,7 @@
     width: 0;
 	height: 0;
 	border-top: 15px solid transparent;
-	border-left: 0px solid #FF6647;
+	border-left: 0px solid var(--primary-orange-color);
 	border-bottom: 15px solid transparent;
     transform: translate(100%, -50%);
     z-index: 0;
@@ -64,7 +64,7 @@
 
 .Item svg {
     font-size: 20px;
-    color: #9BAAD3;
+    color: var(--primary-light-purple-color);
     transition: all .3s linear;
 }
 
@@ -72,26 +72,26 @@
     font-size: 16px;
     font-weight: 700;
     margin-top: 10px;
-    color: #9BAAD3;
+    color: var(--primary-light-purple-color);
     transition: all .3s linear;
 }
 
 .ActiveItem {
-    background: #FF6647;
-    box-shadow: 0px 10px 20px rgba(88, 92, 229, 0.65);
+    background: var(--primary-orange-color);
+    box-shadow: var(--primary-purple-boxshadow);
     border-radius: 10px;
 }
 
 .ActiveItem::after {
-    border-left: 15px solid #FF6647;
+    border-left: 15px solid var(--primary-orange-color);
 }
 
 .ActiveItem span {
-    color: #fff;
+    color: var(--primary-white-color);
 }
 
 .ActiveItem svg {
-    color: #fff;
+    color: var(--primary-white-color);
 }
 
 .Langs {
@@ -105,26 +105,26 @@
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    border: 1px solid #9BAAD3;
+    border: 1px solid var(--primary-light-purple-color);
     margin-top: 15px;
     overflow: hidden;
     width: 100%;
-    box-shadow: 0px 10px 20px rgba(88, 92, 229, 0.65);
+    box-shadow: var(--primary-purple-boxshadow);
 }
 
 .LangItem {
     padding: 15px 5px;
     font-weight: 700;
     cursor: pointer;
-    color: #9BAAD3;
+    color: var(--primary-light-purple-color);
     text-align: center;
-    border-top: 1px solid #9BAAD3;
+    border-top: 1px solid var(--primary-light-purple-color);
     transition: all .3s linear;
 }
 
 .ActiveLangItem {
-    background-color: #FF6647;
-    color: #fff;
+    background-color: var(--primary-orange-color);
+    color: var(--primary-white-color);
 }
 
 .LangItem:first-child {
@@ -139,7 +139,7 @@
         width: 100%;
         transform: translate(0, -100%);
         box-shadow: none;
-        border-top: 1px solid #9BAAD3;
+        border-top: 1px solid var(--primary-light-purple-color);
     }
 
     .ContentWrapper, .Menu, .LangItemsBox {
@@ -174,12 +174,12 @@
         left: 50%;
         border-left: 15px solid transparent;
         border-right: 15px solid transparent;
-        border-bottom: 0 solid #FF6647;
+        border-bottom: 0 solid var(--primary-orange-color);
         transform: translate(-50%, -100%);
     }
 
     .ActiveItem::after {
-        border-bottom: 15px solid #FF6647;
+        border-bottom: 15px solid var(--primary-orange-color);
     }
 
     .Langs {
@@ -198,7 +198,7 @@
     .LangItem {
         border: none;
         min-width: 80px;
-        border-left: 1px solid #9BAAD3;
+        border-left: 1px solid var(--primary-light-purple-color);
     }
 }
 
@@ -213,7 +213,7 @@
         height: 50px;
         flex: 0 0 calc(100% / 5);
         border-radius: 0;
-        border-left: 1px solid #9BAAD3;
+        border-left: 1px solid var(--primary-light-purple-color);
     }
 
     .ItemLang {
@@ -245,12 +245,12 @@
         left: 50%;
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;
-        border-bottom: 0 solid #FF6647;
+        border-bottom: 0 solid var(--primary-orange-color);
         transform: translate(-50%, -100%);
     }
 
     .ActiveItem::after {
-        border-bottom: 10px solid #FF6647;
+        border-bottom: 10px solid var(--primary-orange-color);
     }
 
     .MobileLangsItem {
@@ -263,7 +263,7 @@
         right: 0;
         opacity: 0;
         visibility: hidden;
-        border: 1px solid #9BAAD3;
+        border: 1px solid var(--primary-light-purple-color);
         width: 200px;
         transform: translate(100%, calc(-100% - 10px));
         transition: all .3s linear;
@@ -271,8 +271,8 @@
 
     .MobileLangsItem .LangItem {
         border: none;
-        border-top: 1px solid #9BAAD3;
-        background-color: #fff;
+        border-top: 1px solid var(--primary-light-purple-color);
+        background-color: var(--primary-white-color);
     }
 
     .MobileLangsItem .LangItem:first-child {
@@ -281,11 +281,11 @@
 
     .MobileLangsItem .LangItem {
         border: none;
-        border-top: 1px solid #9BAAD3;
-        background-color: #fff;
+        border-top: 1px solid var(--primary-light-purple-color);
+        background-color: var(--primary-white-color);
     }
     .MobileLangsItem .ActiveLangItem {
-        background-color: #FF6647;
+        background-color: var(--primary-orange-color);
     }
 
 

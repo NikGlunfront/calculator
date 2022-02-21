@@ -3,9 +3,9 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #393D46;
+    background-color: var(--primary-dark-grey-color);
     display: flex;
-    color: #fff;
+    color: var(--primary-white-color);
     justify-content: center;
     align-items: center;
     padding: 20px 0;
@@ -19,14 +19,14 @@
 
 
 .Header a {
-    color: #fff;
+    color: var(--primary-white-color);
     transition: all .3s linear;
     margin-left: 50px;
     text-decoration: underline;
 }
 
 .Header a:hover {
-    color: #ecbcb2;
+    color: var(--primary-light-orange-color);
     opacity: .5;
 }
 
