@@ -3,9 +3,9 @@ import Container from '../Container/Container';
 import classes from './Section.module.css';
 
 interface SectionProps {
-    isFirst: boolean
+    isFirst?: boolean
     children: React.ReactChild | React.ReactNode
-    yakor: string
+    yakor?: string
 }
 
 const Section: FC<SectionProps> = ({isFirst, children, yakor}) => {
