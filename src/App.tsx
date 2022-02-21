@@ -15,13 +15,17 @@ const App: FC = () => {
 
     return (
         <div className='page-wrapper'>
+
+            
             <Header links={navData[language].header} />
+
             <Sidebar 
                 sidebarDataUi={sideBarUiData}
                 langsUi={navData} 
             />
 
             {/* <ModalWindow /> */}
+
             <main className="main">
                 <AppRouter/>
             </main>
