@@ -2,9 +2,9 @@ import React, { FC } from 'react';
 
 const Intimacy: FC = () => {
     return (
-        <div>
+        <main className="main">
             INTIMACY
-        </div>
+        </main>
     );
 };
 

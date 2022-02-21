@@ -2,9 +2,9 @@ import React, { FC } from 'react';
 
 const Talents: FC = () => {
     return (
-        <div>
+        <main className="main">
             TALENTS
-        </div>
+        </main>
     );
 };
 

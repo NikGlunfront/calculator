@@ -27,9 +27,8 @@ const App: FC = () => {
 
             {/* <ModalWindow /> */}
 
-            <main className="main">
-                <AppRouter/>
-            </main>
+            
+            <AppRouter/>
 
             <Footer />
         </div>

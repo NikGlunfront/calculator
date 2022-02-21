@@ -29,6 +29,14 @@ body._locked {
     background: linear-gradient(180deg, #F6F7FB 75%, #E5DFFD);
 }
 
+@media screen and (max-width: 992px) {
+    .page-wrapper {padding-bottom: 71px;}
+}
+
+@media screen and (max-width: 768px) {
+    .page-wrapper {padding-bottom: 51px;}
+}
+
 .main {
     flex: 1;
 }

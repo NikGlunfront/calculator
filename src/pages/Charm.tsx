@@ -2,9 +2,9 @@ import React, { FC } from 'react';
 
 const Charm: FC = () => {
     return (
-        <div>
+        <main className="main">
             CHARM
-        </div>
+        </main>
     );
 };
 
