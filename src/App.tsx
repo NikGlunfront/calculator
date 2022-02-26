@@ -18,22 +18,23 @@ const App: FC = () => {
     const navData = DATA_LANGUAGES;  
     const sideBarUiData = DATA_SIDEBAR;
 
-    // useEffect(() => {
-    //     if (localStorage.getItem('token')) {
-    //         let token = localStorage.getItem('token')
-    //         console.log(`Токен уже есть - ${token}`)
-    //         setIsLogged(true)
-    //     } else {
-    //         setIsLogged(false)
-    //     }
+    useEffect(() => {
+        // if (localStorage.getItem('token')) {
+        //     let token = localStorage.getItem('token')
+        //     console.log(`Токен уже есть - ${token}`)
+        //     setIsLogged(true)
+        // } else {
+        //     setIsLogged(false)
+        // }
+        localStorage.getItem('adminLog') === 'true' && setIsLogged(true)
         
-    // }, [auth])
+    }, [auth])
 
     return (
         auth
             ?
             <div className='page-wrapper page-wrapper_admin'>
-                <Header links={navData[language].header} />
+                <Header />
                 <AdminRouter/>
             </div>
             :

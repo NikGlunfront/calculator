@@ -2,7 +2,7 @@ import React, { FC, MouseEventHandler } from 'react';
 
 interface HeaderLinkProps {
     children: React.ReactChild
-    onClick: MouseEventHandler
+    onClick?: MouseEventHandler
 }
 
 const HeaderLink:FC<HeaderLinkProps> = ({children, onClick}:HeaderLinkProps) => {

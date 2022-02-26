@@ -8,7 +8,7 @@ import classes from './Header.module.css';
 import HeaderLink from './HeaderLink';
 
 interface HeaderProps {
-    links: IHeaderLink[]
+    links?: IHeaderLink[]
 }
 
 const Header: FC<HeaderProps> = ({links}) => {
@@ -18,26 +18,21 @@ const Header: FC<HeaderProps> = ({links}) => {
     const logout = (e: React.MouseEvent) => {
         e.preventDefault()
         setIsLogged(false)
+        localStorage.setItem('adminLog', '')
     }
 
     return (
         <header className={classes.Header}>
             <Container>
                 <div style={{display: 'flex', justifyContent: 'flex-end'}}>
-                    {auth && <a href='#'>NIKITA</a>}
-                    {auth && <a 
-                        onClick={logout}
-                        href="#"
-                    >
-                        Выйти
-                    </a>
-                    }   
+                    {auth && <HeaderLink>AdminPanel</HeaderLink>}
+                    {auth && <HeaderLink onClick={logout}>Выйти</HeaderLink>}   
 
-                    {/* {links.map(link => 
+                    {links && links.map(link => 
                         <HeaderLink key={link.id} onClick={link.onClick}>
                             {link.text}
                         </HeaderLink>    
-                    )} */}
+                    )}
                 </div>
             </Container>
         </header>
