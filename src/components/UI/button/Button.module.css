@@ -5,18 +5,18 @@
     cursor: pointer;
     padding: 12px 20px;
     max-width: 100%;
-    color: #fff;
+    color: var(--primary-white-color);
     font-weight: 700;
     font-size: 20px;
     border: none;
     border-radius: 8px;
-    background-color: #FF6647;
-    box-shadow: 0px 10px 20px rgb(88 92 229 / 65%);
+    background-color: var(--primary-orange-color);
+    box-shadow: var(--primary-purple-boxshadow);
     transition: all .3s linear;
     margin: 20px auto;
     max-width: fit-content;
 }
 
 .Button:hover {
-    background-color: #ff6647a8;
+    background-color: var(--primary-hover-orange-color);
 }

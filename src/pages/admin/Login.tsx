@@ -3,6 +3,7 @@ import { getToken } from '../../API/AdminService';
 import Section from '../../components/Section/Section';
 import SectionBody from '../../components/Section/SectionBody';
 import Button from '../../components/UI/button/Button';
+import Input from '../../components/UI/input/Input';
 import { useAuthActions } from '../../hooks/redux/useActions';
 
 const Login: FC = () => {
@@ -36,26 +37,15 @@ const Login: FC = () => {
                         onSubmit={handleSubmit} 
                         action="submit"
                     >
-                        <input 
+                        <Input
                             value={inputName}
                             onChange={onNameChange}
-                            name='login' 
-                            style={{marginBottom: '20px', width: '200px', height: '50px', padding: '10px'}} 
-                            type="text"  
-                            autoComplete='off'
                         />
-                        <input 
+                        <Input
                             value={inputPasswd}
                             onChange={onPasswdChange}
-                            style={{marginBottom: '20px', width: '200px', height: '50px', padding: '10px'}}
-                            name='passwd' 
-                            type="text" 
-                            autoComplete='off'
                         />
-
-                        <Button
-                            onClick={login}
-                        >
+                        <Button onClick={login}>
                             Войти
                         </Button>
                     </form>
