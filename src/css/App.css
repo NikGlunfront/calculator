@@ -29,6 +29,10 @@ body._locked {
     background: linear-gradient(180deg, #F6F7FB 75%, #E5DFFD);
 }
 
+.page-wrapper_admin {
+    padding-left: 0;
+}
+
 @media screen and (max-width: 992px) {
     .page-wrapper {padding-bottom: 71px;}
 }

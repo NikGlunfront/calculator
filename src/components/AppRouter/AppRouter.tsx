@@ -3,6 +3,7 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import Charm from '../../pages/Charm';
 import Home from '../../pages/Home';
 import Intimacy from '../../pages/Intimacy';
+import Login from '../../pages/admin/Login';
 import Talents from '../../pages/Talents';
 import { RouteNames } from '../../router';
 
@@ -10,14 +11,24 @@ const AppRouter: FC = () => {
     return (
         <Routes>    
             <Route 
-                path={RouteNames.HOME}
-                key={RouteNames.HOME}
-                element={<Home />}
+                path={RouteNames.TALENTS}
+                key={RouteNames.TALENTS}
+                element={<Talents/>}
+            />
+            <Route 
+                path={RouteNames.ADMINLOGIN}
+                key={RouteNames.ADMINLOGIN}
+                element={<Login />}
             />
             <Route 
                 path={RouteNames.CHARM}
                 key={RouteNames.CHARM}
                 element={<Charm />}
+            />
+            <Route 
+                path={RouteNames.HOME}
+                key={RouteNames.HOME}
+                element={<Home />}
             />
             <Route 
                 path={RouteNames.PROXIMITY}
