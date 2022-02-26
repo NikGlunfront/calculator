@@ -9,6 +9,7 @@ import Sidebar from './components/Sidebar/Sidebar';
 import { DATA_SIDEBAR } from './data/Sidebar';
 import Footer from './components/Footer/Footer';
 import { useAuthActions } from './hooks/redux/useActions';
+import AdminRouter from './components/AppRouter/AdminRouter';
 
 const App: FC = () => {
     const {language} = useAppSelector(allStates.languageState)
@@ -17,35 +18,37 @@ const App: FC = () => {
     const navData = DATA_LANGUAGES;  
     const sideBarUiData = DATA_SIDEBAR;
 
-    useEffect(() => {
-        if (localStorage.getItem('token')) {
-            let token = localStorage.getItem('token')
-            console.log(`Токен уже есть - ${token}`)
-            setIsLogged(true)
-        } else {
-            setIsLogged(false)
-        }
+    // useEffect(() => {
+    //     if (localStorage.getItem('token')) {
+    //         let token = localStorage.getItem('token')
+    //         console.log(`Токен уже есть - ${token}`)
+    //         setIsLogged(true)
+    //     } else {
+    //         setIsLogged(false)
+    //     }
         
-    }, [auth])
+    // }, [auth])
 
     return (
-        <div className='page-wrapper'>
+        auth
+            ?
+            <div className='page-wrapper page-wrapper_admin'>
+                <Header links={navData[language].header} />
+                <AdminRouter/>
+            </div>
+            :
+            <div className='page-wrapper'>
+                <Header links={navData[language].header} />
+                <Sidebar 
+                    sidebarDataUi={sideBarUiData}
+                    langsUi={navData} 
+                />
+                {/* <ModalWindow /> */}
+                <AppRouter/>
+                <Footer />
+            </div>
 
-            
-            <Header links={navData[language].header} />
-
-            <Sidebar 
-                sidebarDataUi={sideBarUiData}
-                langsUi={navData} 
-            />
-
-            {/* <ModalWindow /> */}
-
-            
-            <AppRouter/>
-
-            <Footer />
-        </div>
+        
     );
 };
 
