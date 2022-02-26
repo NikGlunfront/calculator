@@ -2,6 +2,7 @@ import React, { FC, useState } from 'react';
 import { getToken } from '../../API/AdminService';
 import Section from '../../components/Section/Section';
 import SectionBody from '../../components/Section/SectionBody';
+import Button from '../../components/UI/button/Button';
 import { useAuthActions } from '../../hooks/redux/useActions';
 
 const Login: FC = () => {
@@ -52,12 +53,11 @@ const Login: FC = () => {
                             autoComplete='off'
                         />
 
-                        <button 
-                            style={{padding: '10px', cursor: 'pointer'}}
+                        <Button
                             onClick={login}
                         >
-                            ВОЙТИ
-                        </button>
+                            Войти
+                        </Button>
                     </form>
                     {/* <button onClick={() => {getAllTabs()}}>ЗАРЕГИСТРИРОВАТЬ</button> */}
                 </SectionBody>
