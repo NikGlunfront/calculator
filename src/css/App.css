@@ -45,6 +45,13 @@ body._locked {
     flex: 1;
 }
 
+.text-row {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .ant-select {
     font-weight: 700;
     font-size: 16px;

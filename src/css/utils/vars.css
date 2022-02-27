@@ -1,13 +1,17 @@
 :root {
+    /*colors*/
     --primary-white-color: #fff;
     --primary-grey-color: #F6F7FB;
     --primary-orange-color: #FF6647;
     --primary-light-purple-color: #9BAAD3;
     --primary-light-blue-color: #516395;
     --primary-purple-color: #614385;
-    --primary-purple-boxshadow: 0px 10px 20px rgba(88, 92, 229, 0.65);
-    --sidebar-content-wrapper-boxshadow: 5px 0px 30px 0 rgba(34, 60, 80, 0.6) inset;
     --primary-dark-grey-color: #393D46;
     --primary-light-orange-color: #ecbcb2;
     --primary-hover-orange-color: #ff6647a8;
+
+    /*box shadows*/
+    --primary-purple-boxshadow: 0px 10px 20px rgba(88, 92, 229, 0.65);
+    --primary-contentbox-boxshadow: 0px 10px 20px rgb(88 92 229 / 30%);
+    --sidebar-content-wrapper-boxshadow: 5px 0px 30px 0 rgba(34, 60, 80, 0.6) inset;
 }

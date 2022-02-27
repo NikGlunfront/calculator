@@ -1,0 +1,37 @@
+.Note {
+    position: absolute;
+    top: 35%;
+    left: 30px;
+    color: var(--primary-light-purple-color);
+    font-size: 30px;
+    transform: translate(0, -50%);
+}
+
+@media screen and (max-width: 576px) {
+    .Note {
+        left: 20px;
+    }
+}
+
+.Text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.Text p {
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+.Wrapper:first-child {
+    margin-top: 0;
+}
+
+.WrapperBox {
+    max-width: 350px;
+    justify-content: center;
+}

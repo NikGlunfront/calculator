@@ -1,0 +1,18 @@
+.Wrapper {
+    width: 100%;
+    padding: 30px 30px 30px 100px;
+    margin: 20px;
+    position: relative;
+    background-color: var(--primary-white-color);
+    box-shadow: var(--primary-contentbox-boxshadow);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;  
+}
+
+@media screen and (max-width: 576px) {
+    .Wrapper {
+        padding: 20px 20px 20px 70px;
+        margin: 10px auto;
+    }
+}
