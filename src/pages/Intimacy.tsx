@@ -3,8 +3,6 @@ import InfoBlock from '../components/InfoBlock/InfoBlock';
 import PreviewSection from '../components/Section/PreviewSection';
 import Section from '../components/Section/Section';
 import SectionBody from '../components/Section/SectionBody';
-import SectionSubtitle from '../components/Section/SectionSubtitle';
-import SectionTitle from '../components/Section/SectionTitle';
 import { DATA_INTIMICY } from '../data/intimicy';
 import { useAppSelector } from '../hooks/redux/redux';
 import { allStates } from '../store/customSelector';

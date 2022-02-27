@@ -1,10 +1,9 @@
 import React, { FC } from 'react';
 import InfoBlock from '../components/InfoBlock/InfoBlock';
+import PartnersBlock from '../components/PartnersBlock/PartnersBlock';
 import PreviewSection from '../components/Section/PreviewSection';
 import Section from '../components/Section/Section';
 import SectionBody from '../components/Section/SectionBody';
-import SectionSubtitle from '../components/Section/SectionSubtitle';
-import SectionTitle from '../components/Section/SectionTitle';
 import { DATA_CHARM } from '../data/charm';
 import { useAppSelector } from '../hooks/redux/redux';
 import { allStates } from '../store/customSelector';
@@ -27,6 +26,8 @@ const Charm: FC = () => {
                     </div> 
                 </SectionBody>
             </Section>
+
+            <PartnersBlock />
         </main>
     );
 };

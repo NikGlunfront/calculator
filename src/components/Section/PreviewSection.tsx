@@ -1,6 +1,4 @@
 import React, { FC } from 'react';
-import { useAppSelector } from '../../hooks/redux/redux';
-import { allStates } from '../../store/customSelector';
 import Section from './Section';
 import SectionSubtitle from './SectionSubtitle';
 import SectionTitle from './SectionTitle';
