@@ -3,10 +3,11 @@ import classes from './Input.module.css';
 
 interface InputProps {
     name: string,
-
+    typeText?: true
+    typeNum?: true
 }
 
-const Input: FC<InputProps> = ({name}) => {
+const Input: FC<InputProps> = ({name, typeNum, typeText}) => {
     const [value, setValue] = useState<string>(name)
 
     const onInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -24,14 +25,27 @@ const Input: FC<InputProps> = ({name}) => {
     }
     return (
         <div className={classes.InputContainer}>
-            <input
-                value={value}
-                onChange={onInputChange}
-                onFocus={onInputFocus}
-                onBlur={onInpuBlur}
-                type="text"  
-                autoComplete='off'
-            />
+            {typeText && 
+                <input
+                    value={value}
+                    onChange={onInputChange}
+                    onFocus={onInputFocus}
+                    onBlur={onInpuBlur}
+                    type='text'
+                    autoComplete='off'
+                />
+            }
+            {typeNum && 
+                <input
+                    value={value}
+                    onChange={onInputChange}
+                    onFocus={onInputFocus}
+                    onBlur={onInpuBlur}
+                    type='number'
+                    inputMode='numeric'
+                    autoComplete='off'
+                />
+            }
             <label>{name}</label>
         </div>
     );

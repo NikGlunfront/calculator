@@ -2,6 +2,9 @@ import React, { FC } from 'react';
 import { DATA_MAIN } from '../../data/main';
 import { useAppSelector } from '../../hooks/redux/redux';
 import { allStates } from '../../store/customSelector';
+import Card from '../Card/Card';
+import CardImg from '../Card/CardImg';
+import CardInput from '../Card/CardInput';
 import Section from '../Section/Section';
 import SectionInfo from '../Section/SectionInfo';
 import SectionSubtitle from '../Section/SectionSubtitle';
@@ -15,10 +18,13 @@ const PartnersBlock: FC = () => {
             <SectionSubtitle>{DATA_MAIN.ui[language].partnersTitle}</SectionSubtitle>
             <SectionInfo>{DATA_MAIN.ui[language].partnersDescription}</SectionInfo>
             <WhiteBoxWrapper modifyClass={classes.WrapperBox}>
-                {/* <Card>
-                    <CardImage imgSrc={partnerInput.img} description={partnerInput.text} />
-                    <CardInputBlock data={partnerInput} />    
-                </Card>   */}
+                <Card>
+                    <CardImg 
+                        imgSrc={DATA_MAIN.partnerInput[language].img} 
+                        description={DATA_MAIN.partnerInput[language].text} 
+                    />
+                    <CardInput name='partners' />
+                </Card>
             </WhiteBoxWrapper>
         </Section>
     );

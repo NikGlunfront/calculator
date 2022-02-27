@@ -28,9 +28,11 @@ const Login: FC = () => {
                         action="submit"
                     >
                         <Input
+                            typeText
                             name='Логин'
                         />
                         <Input
+                            typeText
                             name='Пароль'
                         />
                         <Button onClick={login}>
