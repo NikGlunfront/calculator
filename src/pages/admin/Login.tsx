@@ -29,10 +29,12 @@ const Login: FC = () => {
                     >
                         <Input
                             typeText
+                            id='login'
                             name='Логин'
                         />
                         <Input
                             typeText
+                            id='passwd'
                             name='Пароль'
                         />
                         <Button onClick={login}>

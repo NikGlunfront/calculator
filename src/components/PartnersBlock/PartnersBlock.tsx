@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import { DATA_CHARM } from '../../data/charm';
 import { DATA_MAIN } from '../../data/main';
 import { useAppSelector } from '../../hooks/redux/redux';
 import { allStates } from '../../store/customSelector';
@@ -12,6 +13,7 @@ import WhiteBoxWrapper from '../WhiteBoxWrapper/WhiteBoxWrapper';
 import classes from './PartnersBlock.module.css';
 
 const PartnersBlock: FC = () => {
+    const dataUI = DATA_CHARM.inputs;
     const {language} = useAppSelector(allStates.languageState)
     return (
         <Section>
@@ -21,9 +23,12 @@ const PartnersBlock: FC = () => {
                 <Card>
                     <CardImg 
                         imgSrc={DATA_MAIN.partnerInput[language].img} 
-                        description={DATA_MAIN.partnerInput[language].text} 
+                        description={DATA_MAIN.partnerInput[language].id} 
                     />
-                    <CardInput name='partners' />
+                    <CardInput 
+                        id={DATA_MAIN.partnerInput[language].id} 
+                        name={DATA_MAIN.partnerInput[language].text}
+                    />
                 </Card>
             </WhiteBoxWrapper>
         </Section>

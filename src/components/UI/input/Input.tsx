@@ -2,12 +2,13 @@ import React, { FC, useState } from 'react';
 import classes from './Input.module.css';
 
 interface InputProps {
+    id: string,
     name: string,
     typeText?: true
     typeNum?: true
 }
 
-const Input: FC<InputProps> = ({name, typeNum, typeText}) => {
+const Input: FC<InputProps> = ({name, typeNum, typeText, id}) => {
     const [value, setValue] = useState<string>(name)
 
     const onInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -33,6 +34,7 @@ const Input: FC<InputProps> = ({name, typeNum, typeText}) => {
                     onBlur={onInpuBlur}
                     type='text'
                     autoComplete='off'
+                    placeholder={name}
                 />
             }
             {typeNum && 
@@ -44,6 +46,7 @@ const Input: FC<InputProps> = ({name, typeNum, typeText}) => {
                     type='number'
                     inputMode='numeric'
                     autoComplete='off'
+                    placeholder={name}
                 />
             }
             <label>{name}</label>
