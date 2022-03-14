@@ -17,6 +17,7 @@ const Talents: FC = () => {
     const dataMain = DATA_MAIN.calc[language]
     const dataInputs = DATA_TALENTS.inputs[language];
     const dataUiTexts = DATA_TALENTS.ui[language];
+    
     return (
         <main className="main">
             <PreviewSection

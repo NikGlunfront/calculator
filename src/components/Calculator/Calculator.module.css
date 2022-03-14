@@ -18,6 +18,6 @@
 
 .BoxWrapper {
     max-width: 300px;
-    padding: 20px;
-    box-shadow: var(--primary-inputcard-boxshadow);
+    padding: 20px !important;
+    box-shadow: var(--primary-inputcard-boxshadow) !important;
 }
