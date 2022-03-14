@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import { DATA_CHARM } from '../../data/charm';
 import { DATA_MAIN } from '../../data/main';
 import { useAppSelector } from '../../hooks/redux/redux';
 import { allStates } from '../../store/customSelector';
@@ -13,7 +12,6 @@ import WhiteBoxWrapper from '../WhiteBoxWrapper/WhiteBoxWrapper';
 import classes from './PartnersBlock.module.css';
 
 const PartnersBlock: FC = () => {
-    const dataUI = DATA_CHARM.inputs;
     const {language} = useAppSelector(allStates.languageState)
     return (
         <Section>

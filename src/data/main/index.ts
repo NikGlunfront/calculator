@@ -2,7 +2,7 @@ import partners from '../../assets/img/charm/partners.png';
 
 const DATA_MAIN_CALCULATION = {
     "rus": {calculateText: 'Заполните поля в соответствии с информацией в ячейках', info: 'Для получения детального расчета нажмите кнопку "Получить результат" после ввода данных'},
-    "eng": {alculateText: 'Fill in the fields according to the information in the cells', info: 'For a detailed calculation, click the "Get result" button after entering the data'},
+    "eng": {calculateText: 'Fill in the fields according to the information in the cells', info: 'For a detailed calculation, click the "Get result" button after entering the data'},
     "tur": {calculateText: 'Hücrelerdeki bilgilere göre alanları doldurun', info: 'Detaylı hesaplama için verileri girdikten sonra "Sonuç al" butonuna tıklayınız.'},
 }
 

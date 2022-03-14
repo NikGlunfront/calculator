@@ -21,7 +21,11 @@ const Input: FC<InputProps> = ({name, typeNum, typeText, id}) => {
 
     const onInpuBlur = () => {
         if (value.length === 0) {
-            setValue(name)
+            if (typeNum) {
+                setValue('0')
+            } else {
+                setValue(name)
+            }
         }
     }
     return (
@@ -29,6 +33,7 @@ const Input: FC<InputProps> = ({name, typeNum, typeText, id}) => {
             {typeText && 
                 <input
                     value={value}
+                    name={id}
                     onChange={onInputChange}
                     onFocus={onInputFocus}
                     onBlur={onInpuBlur}
@@ -40,6 +45,7 @@ const Input: FC<InputProps> = ({name, typeNum, typeText, id}) => {
             {typeNum && 
                 <input
                     value={value}
+                    name={id}
                     onChange={onInputChange}
                     onFocus={onInputFocus}
                     onBlur={onInpuBlur}
